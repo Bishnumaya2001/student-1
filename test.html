@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test student profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+   
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <div class="container">
+        <div class="card m-4 p-4">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <img style="width: 200px; height:100px ; margin-right:0px;" src="abc.png" alt="" class="rectangle">
+                </div>
+                <div class="col-md-4">
+                    <h3 style="font-weight:bold; margin-left: 0px;">shree Amar jyoti secondary school</h3>
+                </div>
+                <!-- <div class="head">
+                  <div class="col-md-12">
+                    <h3 style="font-weight:bold; ">shree Amar jyoti secondary school</h3>
+                  </div>
+             </div> -->
+            </div>
+           
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <label for="">Name:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="name" class="form-control">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <label for="">Class:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="class" class="form-control">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <label for="">Batch:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Batch" class="form-control">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <label for="">Address:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Address" class="form-control">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <label for="">Digital Code:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Digital code" class="form-control">
+                        </div>
+                    </div><br>
+                </div>
+                <div class="col-md-3">
+                    <img style="width: 200px; height:158px ;" src="1.jpg" alt="" class="rectangle">
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <button class="btn btn-warning btn-block" id="btn1">FEE</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-warning btn-block" id="btn2">LIBRARY</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-warning btn-block" id="btn3">RESULT</button>
+                    </div>
+                </div>
+            </div><br>
+            <div class="card hide" id="card1">
+                <div class="shadow shadow-lg">
+                    
+                        <table class="table table-striped">
+                           <thead>
+                               <tr>
+                                   <th>Academic Year</th>
+                                   <th>Class</th>
+                                   <th>Month</th>
+                                   <th>Due</th>
+                               </tr>
+                           </thead>
+    
+                           <tbody>
+                               <tr>
+                                   <td>2071</td>
+                                   <td>11</td>
+                                   <td>Baisakh</td>
+                                   <td>1000</td>
+                               </tr>
+                           </tbody>
+                        </table>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="card hide" id="card2">
+                <div class="shadow shadow-lg">
+                    
+                        <table class="table table-striped">
+                           <thead>
+                               <tr>
+                                   <th>Digital code</th>
+                                   <th>number of book issued</th>
+                                   <th>Issued book</th>
+                               </tr>
+                           </thead>
+    
+                           <tbody>
+                               <tr>
+                                   <td>0678</td>
+                                   <td>45</td>
+                                   <td>56</td>
+                               </tr>
+                           </tbody>
+                        </table>
+                    
+                </div>
+            </div><br>
+            <div class="card hide" id="card3">
+                <div class="shadow shadow-lg">
+                    
+                        <table class="table table-striped">
+                           <thead>
+                               <tr>
+                                   <th>Name</th>
+                                   <th>class</th>
+                                   <th>Roll.no</th>
+                                   <th>Digital code</th>
+                               </tr>
+                           </thead>
+    
+                           <tbody>
+                               <tr>
+                                   <td>maya</td>
+                                   <td>12</td>
+                                   <td>9</td>
+                                   <td>04</td>
+                               </tr>
+                           </tbody>
+                        </table>
+                        
+                    
+                </div>
+            </div>
+            
+        </div>
+
+   
+   
+
+   
+    
+    
+</body>
+</html>
+<script>
+    document.querySelector('#btn1').addEventListener('click', function() {
+        document.querySelector('#card1').classList.remove('hide');
+        document.querySelector('#card2').classList.add('hide');
+        document.querySelector('#card3').classList.add('hide');
+    })
+    document.querySelector('#btn2').addEventListener('click', function() {
+        document.querySelector('#card2').classList.remove('hide');
+        document.querySelector('#card1').classList.add('hide');
+        document.querySelector('#card3').classList.add('hide');
+        
+    })
+    document.querySelector('#btn3').addEventListener('click',function() {
+        document.querySelector('#card3').classList.remove('hide');
+        document.querySelector('#card1').classList.add('hide');
+        document.querySelector('#card2').classList.add('hide');
+    })
+
+</script>
+
