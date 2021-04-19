@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(238, 215, 215);
+    font-size: medium;
+    line-height: 1.80857;
+    margin: 0px;
+   
+    
+}
+img{
+    max-width: 100%;
+    height:auto;
+}
+
+.card{
+text-align: left;
+}
+.hide {
+    display: none;
+}
+.head{
+    
+    text-align: right;
+}
