@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(219, 200, 200);
+    font-size: medium;
+}
+img{
+    max-width: 100%;
+    height:auto;
+    float: right;
+    
+    
+}
+.card{
+    text-align: left;
+}
+
