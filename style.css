@@ -1,23 +1,142 @@
-body{
-    background-color: rgb(238, 215, 215);
-    font-size: medium;
-    line-height: 1.80857;
-    margin: 0px;
-   
-    
+@import url(https://fonts.googleapis.com/css?family?=Source+Sans+Pro);
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro",sans-serif;
+    color: #ffffff;
+    background-color: black;
 }
-img{
-    max-width: 100%;
-    height:auto;
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #89216b, #da4453);
 }
 
-.card{
-text-align: left;
+.container{
+    padding: 6rem 2rem;
+    display: grid;
+    align-content:center;
+    border-radius: 1rem;
+    animation: appear is forwards;
 }
-.hide {
-    display: none;
+form{
+    display: grid;
+    justify-items: center;
+    row-gap: 1.5rem;
+
 }
-.head{
+input, button{
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffff20;
+    color: #ffffffaa;
+    text-align: center;
+    border: none;
+    border-radius: 2rem;
+}
+input::placeholder{
+    color:#ffffff80;
+    text-align: center;
+    letter-spacing: 0;
+}
+input[type="password"]{
+    letter-spacing: 0.1rem;
+}
+input:focus{
+    text-align: left;
+}
+button{
+    margin-top: 1rem;
+    padding: 0.75rem 2.5rem;
+    text-align: center;
+    background-color: #ffffff;
+    color: #bc375c;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+button:hover {
+    background-color: #ffffffcc;
+}
+h1{
+    text-align: center;
     
-    text-align: right;
 }
+h2{
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.logo {
+    margin: 0 auto 1rem;
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    background-color:#ffffff80;
+    border-radius:0.2rem;
+    animation: appear is forwards;
+}
+.logo::before{
+    content: "";
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    height: 80%;
+    width: 80%;
+    background-color: #ffffff80;
+    transform-origin: left bottom;
+    border-radius:0.2rem;
+}
+.logo::after{
+    content: "";
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+    width: 80%;
+    background-color: #ffffff80;
+    transform-origin: right bottom;
+    border-radius:0.2rem;
+    animation: logo2 is forwards;
+}
+
+@keyframes apper{
+    from{
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(2rem);
+
+    }
+}
+@keyframes logo1 {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(-19deg);
+    }
+}
+@keyframes logo2{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(19deg);
+    }
+}
+@media screen and (min-width: 426px){
+    .container{
+        border: 2px solid #ffffff40;
+    }
+}
+
+
