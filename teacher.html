@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher profile</title>
+    <title>Test teacher profile</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="style.css">
    
 </head>
 <body>
-    <link rel="stylesheet" href="teacher.css">
+   
     <div class="container">
         <div class="card m-4 p-4">
             <div class="row">
@@ -24,8 +25,8 @@
                     <h3 style="font-weight:bold; margin-left: 0px;">shree Amar jyoti secondary school</h3>
                     <h4 style="font-weight:bold;">Teacher Profile</h4>
                 </div>
+               
             </div>
-           
            
             <div class="row">
                 <div class="col-md-9">
@@ -36,21 +37,21 @@
                         </div>
                         <div class="col-md-6">
                             <input type="text" placeholder="name" class="form-control">
-                        </div>                        
+                        </div>
                     </div><br>
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-2">
-                            <label for="">Level:</label>
+                            <label for="">Class:</label>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="Level" class="form-control">
+                            <input type="text" placeholder="class" class="form-control">
                         </div>
                     </div><br>
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-2">
-                            <label for="">Address:</label>
+                            <label for="">Batch:</label>
                         </div>
                         <div class="col-md-6">
                             <input type="text" placeholder="Batch" class="form-control">
@@ -59,7 +60,7 @@
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-2">
-                            <label for="">Phone.no:</label>
+                            <label for="">Address:</label>
                         </div>
                         <div class="col-md-6">
                             <input type="text" placeholder="Address" class="form-control">
@@ -68,16 +69,25 @@
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-2">
-                            <label for="">Gmail:</label>
+                            <label for="">Phone no:</label>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="gmail" class="form-control">
+                            <input type="text" placeholder="Digital code" class="form-control">
                         </div>
                     </div><br>
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-2">
-                            <label for="">Citizenship. no:</label>
+                            <label for="">Phone no:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="phone no" class="form-control">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <label for="">citizenship.no:</label>
                         </div>
                         <div class="col-md-6">
                             <input type="text" placeholder="citizenship.no" class="form-control">
@@ -86,29 +96,133 @@
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-2">
-                            <label for="">Teacher.no:</label>
+                            <label for="">Gmail:</label>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="Teacher.no" class="form-control">
+                            <input type="text" placeholder="Gmail" class="form-control">
                         </div>
-                    </div>
-                </div> 
-                <div class="col-md-3">
-                    <img style="width: 250px; height:250px; margin-right: 5px;" src="3.jpg.jpg" alt="" class="rectangle">
+                    </div><br>
                 </div>
-    </div>
-    <div class="row" style="padding-top: 2rem;">
-        <div class="col-md-4">
-            <button class="btn btn-warning btn-block">ADD RESULT</button>
+                <div class="col-md-3">
+                    <img style="width: 200px; height:158px ;" src="3.jpg.jpg" alt="" class="rectangle">
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <button class="btn btn-warning btn-block" id="btn1"> ADD RESULT</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-warning btn-block" id="btn2">VIEW RESULT</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-warning btn-block" id="btn3">ADD MARKS</button>
+                    </div>
+                </div>
+            </div><br>
+            <div class="card hide" id="card1">
+                <div class="shadow shadow-lg">
+                    
+                        <table class="table table-striped">
+                           <thead>
+                               <tr>
+                                   <th></th>
+                                   <th></th>
+                                   <th></th>
+                                   <th></th>
+                               </tr>
+                           </thead>
+    
+                           <tbody>
+                               <tr>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                               </tr>
+                           </tbody>
+                        </table>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="card hide" id="card2">
+                <div class="shadow shadow-lg">
+                    
+                        <table class="table table-striped">
+                           <thead>
+                               <tr>
+                                   <th></th>
+                                   <th></th>
+                                   <th></th>
+                               </tr>
+                           </thead>
+    
+                           <tbody>
+                               <tr>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                               </tr>
+                           </tbody>
+                        </table>
+                    
+                </div>
+            </div><br>
+            <div class="card hide" id="card3">
+                <div class="shadow shadow-lg">
+                    
+                        <table class="table table-striped">
+                           <thead>
+                               <tr>
+                                   <th></th>
+                                   <th></th>
+                                   <th></th>
+                                   <th></th>
+                               </tr>
+                           </thead>
+    
+                           <tbody>
+                               <tr>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                               </tr>
+                           </tbody>
+                        </table>
+                        
+                    
+                </div>
+            </div>
+            
         </div>
-        <div class="col-md-4">
-            <button class="btn btn-warning btn-block" >VIEW RESULT</button>
-        </div>
-        <div class="col-md-4">
-            <button class="btn btn-warning btn-block" > ADD MARKS</button>
-        </div>
-    </div>
-</div>
-</div>
+
+   
+   
+
+   
+    
+    
 </body>
 </html>
+<script>
+    document.querySelector('#btn1').addEventListener('click', function() {
+        document.querySelector('#card1').classList.remove('hide');
+        document.querySelector('#card2').classList.add('hide');
+        document.querySelector('#card3').classList.add('hide');
+    })
+    document.querySelector('#btn2').addEventListener('click', function() {
+        document.querySelector('#card2').classList.remove('hide');
+        document.querySelector('#card1').classList.add('hide');
+        document.querySelector('#card3').classList.add('hide');
+        
+    })
+    document.querySelector('#btn3').addEventListener('click',function() {
+        document.querySelector('#card3').classList.remove('hide');
+        document.querySelector('#card1').classList.add('hide');
+        document.querySelector('#card2').classList.add('hide');
+    })
+
+</script>
+
