@@ -3,10 +3,10 @@
 *, *::before, *::after{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     font-family: "Source Sans Pro",sans-serif;
     color: #ffffff;
-    background-color: black;
+    background-color:grey;
 }
 html, body {
     height: 100%;
@@ -16,7 +16,18 @@ body{
     display: grid;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #89216b, #da4453);
+    background: linear-gradient(135deg, #c9b4c3, #504748);
+    background: linear-gradient(
+        -30deg, 
+        transparent 40%,
+        #bbb 40%,
+        #bbb 60%,
+        transparent 60%);
+   
+    
+
+    
+    
 }
 
 .container{
@@ -25,6 +36,12 @@ body{
     align-content:center;
     border-radius: 1rem;
     animation: appear is forwards;
+    border-style: double;
+    border-width: 15px;
+    width: 420px;
+    height: 420px;
+    
+      
 }
 form{
     display: grid;
@@ -35,14 +52,14 @@ form{
 input, button{
     font-size: 1.1rem;
     padding: 0.75rem 1.5rem;
-    background-color: #ffffff20;
-    color: #967575aa;
+    background-color: #fc101020;
+    color: #c71c1caa;
     text-align: center;
     border: none;
     border-radius: 2rem;
 }
 input::placeholder{
-    color:#ffffff80;
+    color:black;
     text-align: center;
     letter-spacing: 0;
 }
@@ -50,14 +67,14 @@ input[type="password"]{
     letter-spacing: 0.1rem;
 }
 input:focus{
-    text-align: left;
+    text-align: center;
 }
 button{
     margin-top: 1rem;
     padding: 0.75rem 2.5rem;
     text-align: center;
-    background-color: #ffffff;
-    color: #3f131f;
+    background-color: #f8f7f7;
+    color: #8a7f82;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.4s;
@@ -138,5 +155,3 @@ h2{
         border: 2px solid #ffffff40;
     }
 }
-
-
